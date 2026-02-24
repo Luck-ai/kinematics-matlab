@@ -76,7 +76,7 @@ function [th1n , th1r, th2_1, th2_2, th2_1r, th2_2r,  th3_1, th3_2, th3_2r, th3_
                     D = (r^2 + s^2 -a2^2 - a3^2) / (2 * a2 * a3);
                     th3_1 = atan2(sqrt(1-D^2), D);
                     th2_1 = atan2(z-d1, r) - atan2(a3 * sin(th3_1) , a2 + a3* cos(th3_1));
-                    th1n = atan2d(y,x);
+                    th1n = atan2(y,x);
 
                     th3_2 = atan2(-1 * sqrt(1-D^2), D);
                     th2_2 = atan2(z-d1, r) - atan2(a3 * sin(th3_2) , a2 + a3* cos(th3_2));
