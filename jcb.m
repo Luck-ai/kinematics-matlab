@@ -39,6 +39,6 @@ end
 % L2(3) = Link([thd 0 0 -pi/2, 0]);
 % L2(4) = Link([0 d4 0 0, 1]);
 % robot = SerialLink(L2);
-% [t5 , t_all] = fkine(robot, [th1 d2 thd d4]);
+% [~, t_all] = fkine(robot, [th1 d2 thd d4]);
 
 % [Z, O, jv, jw, jf] = jcb(4, t_all, robot)
