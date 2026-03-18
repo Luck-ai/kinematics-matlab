@@ -5,8 +5,8 @@ function [th1n , th1r, th2_1, th2_2, th2_1r, th2_2r,  th3_1, th3_2, th3_2r, th3_
 
             switch side
                 case 'none'
-                    r = sqrt(x^2 + y^2);
-                    s = z - d1;
+                    r = sqrt(x^2 + y^2)
+                    s = z - d1
                     D = (r^2 + s^2 -a2^2 - a3^2) / (2 * a2 * a3);
                     th3_1 = atan2d(sqrt(1-D^2), D);
                     th2_1 = atan2d(z-d1, r) - atan2d(a3 * sind(th3_1) , a2 + a3* cosd(th3_1));
@@ -25,12 +25,12 @@ function [th1n , th1r, th2_1, th2_2, th2_1r, th2_2r,  th3_1, th3_2, th3_2r, th3_
         
                 case 'left'
         
-                    r = sqrt(x^2+y^2 - d_offset^2);
-                    s = z - d1;
+                    r = sqrt(x^2+y^2 - d_offset^2)
+                    s = z - d1
                     d = (r^2 + s^2 - a2^2 - a3^2) / (2*a2*a3);
         
-                    th3_1 = atan2d(sqrt(1-d^2), d);
-                    th3_2 = atan2d(-1*sqrt(1-d^2), d);
+                    th3_1 = atan2d(sqrt(1-d^2), d); %% up 
+                    th3_2 = atan2d(-1*sqrt(1-d^2), d); %% down
         
                     th2_1 = atan2d(s, r) - atan2d(a3*sind(th3_1), (a2+a3*cosd(th3_1)));
                     th2_2 = atan2d(s, r) - atan2d(a3*sind(th3_2), (a2+a3*cosd(th3_2)));
@@ -44,8 +44,8 @@ function [th1n , th1r, th2_1, th2_2, th2_1r, th2_2r,  th3_1, th3_2, th3_2r, th3_
         
                 case 'right'
         
-                    r = sqrt(x^2+y^2 - d_offset^2);
-                    s = z - d1;
+                    r = sqrt(x^2+y^2 - d_offset^2)
+                    s = z - d1
                     d = (r^2 + s^2 - a2^2 - a3^2) / (2*a2*a3);
         
                     th3_1 = atan2d(sqrt(1-d^2), d);
@@ -71,8 +71,8 @@ function [th1n , th1r, th2_1, th2_2, th2_1r, th2_2r,  th3_1, th3_2, th3_2r, th3_
 
             switch side
                 case 'none'
-                    r = sqrt(x^2 + y^2);
-                    s = z - d1;
+                    r = sqrt(x^2 + y^2)
+                    s = z - d1
                     D = (r^2 + s^2 -a2^2 - a3^2) / (2 * a2 * a3);
                     th3_1 = atan2(sqrt(1-D^2), D);
                     th2_1 = atan2(z-d1, r) - atan2(a3 * sin(th3_1) , a2 + a3* cos(th3_1));
@@ -91,8 +91,8 @@ function [th1n , th1r, th2_1, th2_2, th2_1r, th2_2r,  th3_1, th3_2, th3_2r, th3_
 
                 case 'left'
 
-                    r = sqrt(x^2+y^2 - d_offset^2);
-                    s = z - d1;
+                    r = sqrt(x^2+y^2 - d_offset^2)
+                    s = z - d1
                     d = (r^2 + s^2 - a2^2 - a3^2) / (2*a2*a3);
 
                     th3_1 = atan2(sqrt(1-d^2), d);
@@ -110,8 +110,8 @@ function [th1n , th1r, th2_1, th2_2, th2_1r, th2_2r,  th3_1, th3_2, th3_2r, th3_
 
                 case 'right'
 
-                    r = sqrt(x^2+y^2 - d_offset^2);
-                    s = z - d1;
+                    r = sqrt(x^2+y^2 - d_offset^2)
+                    s = z - d1
                     d = (r^2 + s^2 - a2^2 - a3^2) / (2*a2*a3);
 
                     th3_1 = atan2(sqrt(1-d^2), d);

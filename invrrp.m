@@ -7,8 +7,8 @@ switch angle
         switch side
             case 'none'
         
-                r = sqrt(Px^2+Py^2);
-                s = Pz - d1;
+                r = sqrt(Px^2+Py^2)
+                s = Pz - d1
         
                 d3 = sqrt(r^2 + s^2) - a2;
         
@@ -21,8 +21,8 @@ switch angle
         
             case 'right'
         
-                r = sqrt(Px^2+Py^2 - d_offset^2);
-                s = Pz - d1;
+                r = sqrt(Px^2+Py^2 - d_offset^2)
+                s = Pz - d1
         
                 d3 = sqrt(r^2 + s^2) - a2;
         
@@ -34,8 +34,8 @@ switch angle
         
             case 'left'
         
-                r = sqrt(Px^2+Py^2 - d_offset^2);
-                s = Pz - d1;
+                r = sqrt(Px^2+Py^2 - d_offset^2)
+                s = Pz - d1
         
                 d3 = sqrt(r^2 + s^2) - a2;
         
