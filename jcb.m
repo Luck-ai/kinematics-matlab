@@ -24,6 +24,7 @@ function [jv, jw, jfinal] = jcb(n, t_all, robot)
         
         fprintf('O vector:\n');
         disp(O(:,i+1));
+        
         if robot.links(i).isrevolute
             jv(:, i) = cross(z_prev, O(:,n+1) - o_prev);
             jw(:, i) = z_prev;
